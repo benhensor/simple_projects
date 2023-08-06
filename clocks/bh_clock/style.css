@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #181e25;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  border: 3px solid #c59b2e;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  background: #2b3037;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 35px rgba(0, 0, 0, 0.75),
+  inset 5px 5px 15px rgba(255, 255, 255, 0.8),
+  inset -5px -5px 15px rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock::before {
+  content: '';
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  border: 3px solid #c59b2e;
+  background: #2b3037;
+  border-radius: 50%;
+}
+
+.clock::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #c59b2e;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.clock span {
+  position: absolute;
+  inset: 20px;
+  color: #fff7ce;
+  text-align: center;
+  transform: rotate(calc(30deg * var(--i)));
+}
+
+.clock span b {
+  font-size: 2em;
+  opacity: 0.25;
+  font-weight: 600;
+  display: inline-block;
+  transform: rotate(calc(-30deg * var(--i)));
+}
+
+.clock .hand {
+  position: absolute;
+  bottom: 50%;
+  transform-origin: bottom;
+  animation: rotate 60s linear infinite;
+}
+
+.clock .hand.second {
+  width: 3px;
+  height: 45%;
+  background-color: #eee;
+}
+
+.clock .hand.minute {
+  width: 7px;
+  height: 40%;
+  background-color: rgb(139, 139, 139);
+}
+
+.clock .hand.hour {
+  width: 10px;
+  height: 35%;
+  background-color: rgb(99, 99, 99);
+}
