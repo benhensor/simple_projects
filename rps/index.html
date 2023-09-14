@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Rock, Paper, Scissors!</h1>
+    <article class="instructions">
+      <h2>Instructions</h2>
+      <p>Choose rock, paper, or scissors and see if you can beat the computer!</p>
+      <p>Click on the image to make your choice.</p>
+    </article>
+    <article class="rps-icons">
+      <button class="selection" data-selection="rock"><img src="images/rock.png" alt="rock" id="rock"></button>
+      <button class="selection" data-selection="paper"><img src="images/paper.png" alt="paper" id="paper"></button>
+      <button class="selection" data-selection="scissors"><img src="images/scissors.png" alt="scissors" id="scissors"></button>
+    </article>
+    <article class="scoreboard">
+      <h2>Scoreboard</h2>
+      <p>Wins: <span id="wins" data-result-win>0</span></p>
+      <p>Losses: <span id="losses" data-result-lose>0</span></p>
+      <p>Draws: <span id="ties" data-result-draw>0</span></p>
+    </article>
+  </div>
+</body>
+</html>

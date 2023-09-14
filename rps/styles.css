@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  background-color: #ccc;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  min-height: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  color: #505050;
+  font-size: 3rem;
+  margin: 40px 0;
+}
+
+h2 {
+  color: #505050;
+  margin-bottom: 10px;
+}
+
+span {
+  color: #505050;
+}
+
+.instructions {
+  color: #7d7d7d;
+  line-height: 1.5rem;
+}
+
+.rps-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.selection {
+  width: 150px;
+  height: 150px;
+  border: 10px solid #ccc;
+  border-radius: 50%;
+  padding: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.selection:hover {
+  border-color: #7d7d7d;
+  background-color: #ffffff;
+}
+
+.selection img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  transition: all 0.15s ease;
+}
+
+.selection:hover img {
+  filter: brightness(0.5);
+  scale: 1.1;
+}
+
+.scoreboard {
+  color: #7d7d7d;
+  line-height: 2rem;
+}
+
