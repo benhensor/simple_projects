@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* outline: 1px solid red; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(rgb(54, 93, 108), rgb(22, 61, 65))
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  color: #555;
+}
+
+.container {
+  max-width: 600px;
+  min-height: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+article {
+  margin: 20px 0;
+}
+
+header h1 {
+  margin: 0 0 20px 0;
+}
+
+#selection {
+  display: flex;
+  justify-content: space-between;
+}
+  
+button {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 5px solid rgb(207, 134, 0);
+  background-color: #ffffff;
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  border: 5px solid rgb(0, 207, 10); 
+  background-color: #404040;
+}
+
+button img {
+  width: 100%;
+  filter: none;
+  transition: all 0.15s ease;
+}
+
+button:hover img {
+  filter: invert(1);
+  scale: 1.1;
+}
+
+#result {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+}
+
+#scoreboard  h1 {
+  margin-bottom: 20px;
+}
+
+#scoreboard h2 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#score-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#scoreboard span {
+  font-weight: bold;
+  font-size: 24px;
+}
